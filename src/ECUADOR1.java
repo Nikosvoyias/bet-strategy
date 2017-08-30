@@ -43,7 +43,7 @@ public class ECUADOR1 {
 
 
         Element table = doc.select("table.schema").first(); //Επιλέγουμε το σωστό table απο το website
-        for (Element row : table.select("tr:gt(2)")) {  // η for εξασφαλιζει οτι με τις αντιστοιχες επαναλήψεις θα περαστούν ολα τα στοιχεία του πινακα στη βαση μας
+        for (Element row : table.select("tr:gt(2)")) {  // η for εξαφαλιζει οτι με τις αντιστοιχες επαναλήψεις θα περαστούν ολα τα στοιχεία του πινακα στη βαση μας
             Elements td = row.select("td > a");
 
 
